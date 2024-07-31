@@ -1,0 +1,62 @@
+/* src/components/Features.css */
+
+.features {
+  padding: 40px 20px;
+  background-color: #f8f9fa00;
+}
+
+.features-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: transparent;
+}
+
+.feature-card {
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.333% - 40px); /* Adjust width to fit 3 items per row with gap */
+  box-sizing: border-box;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.3s ease; /* Added transition for smooth effect */
+}
+
+.feature-card:hover {
+  transform: translateY(-5px); /* Move the card up slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+  background-color: #ff5f03f2; /* Change background color on hover */
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+.feature-card:hover .feature-title {
+  color: #ffffff; /* Change text color on hover */
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: white;
+}

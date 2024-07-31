@@ -1,0 +1,44 @@
+/* src/components/Home.css */
+
+.hero {
+  /* Path to your hero image */
+  background-size: cover; /* Cover the entire area of the hero section */
+  background-position: center; /* Center the image */
+  height: 60vh; /* Adjust the height as needed */
+  background-color: transparent; /* Semi-transparent black background */
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-content {
+  z-index: 1; /* Ensure content is above the background */
+  font-family:'Oswald', sans-serif;
+  font-size: 2rem;
+}
+.hero h1 {
+  margin: 0;
+  font-size: 3.5rem;
+}
+
+.hero p {
+  font-size: 1.7rem;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent blue */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: rgba(0, 86, 179, 0.8); /* Darker shade on hover */
+}
